@@ -6,5 +6,4 @@ todolist-nembhard
 config.js
 
 .nyc
-/*.env
 .DS_Store
