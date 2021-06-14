@@ -4,6 +4,6 @@ npm-debug.log
 todolist-nembhard
 
 config.js
-
+.env
 .nyc
 .DS_Store
