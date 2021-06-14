@@ -2,7 +2,6 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
-// const config = require(__dirname + "/config.js");
 const date = require(__dirname + "/date.js");
 const mongoose = require("mongoose");
 const _ = require("lodash");
@@ -10,12 +9,12 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-// const username = config.getUsername();
-// const apiKey = config.getApiKey();
+let username = process.env.USER_KEY;
+let apiKey = process.env.API_KEY;
 
 // const url = "mongodb://localhost:27017/todolistDB";
-// const uri = "mongodb+srv://" + username + ":" + apiKey + "@cluster0.qr7fx.mongodb.net/ToDoList?retryWrites=true&w=majority";
-const uri = "mongodb+srv://admin-jason:qRLcHjzN8S8KB4AF@cluster0.qr7fx.mongodb.net/ToDoList?retryWrites=true&w=majority";
+const uri = "mongodb+srv://" + USER_KEY + ":" + API_KEY + "@cluster0.qr7fx.mongodb.net/ToDoList?retryWrites=true&w=majority";
+
 const connectionParams = {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true};
 
 app.set('view engine', 'ejs');
