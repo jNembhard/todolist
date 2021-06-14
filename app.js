@@ -14,7 +14,8 @@ const username = config.getUsername();
 const apiKey = config.getApiKey();
 
 // const url = "mongodb://localhost:27017/todolistDB";
-const uri = "mongodb+srv://" + username + ":" + apiKey + "@cluster0.qr7fx.mongodb.net/ToDoList?retryWrites=true&w=majority";
+// const uri = "mongodb+srv://" + username + ":" + apiKey + "@cluster0.qr7fx.mongodb.net/ToDoList?retryWrites=true&w=majority";
+const uri = "mongodb+srv://admin-jason:qRLcHjzN8S8KB4AF@cluster0.qr7fx.mongodb.net/ToDoList?retryWrites=true&w=majority";
 const connectionParams = {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true};
 
 app.set('view engine', 'ejs');
