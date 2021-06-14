@@ -2,7 +2,7 @@
 
 const express = require("express");
 const bodyParser = require("body-parser");
-const config = require(__dirname + "/config.js");
+// const config = require(__dirname + "/config.js");
 const date = require(__dirname + "/date.js");
 const mongoose = require("mongoose");
 const _ = require("lodash");
@@ -10,8 +10,8 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-const username = config.getUsername();
-const apiKey = config.getApiKey();
+// const username = config.getUsername();
+// const apiKey = config.getApiKey();
 
 // const url = "mongodb://localhost:27017/todolistDB";
 // const uri = "mongodb+srv://" + username + ":" + apiKey + "@cluster0.qr7fx.mongodb.net/ToDoList?retryWrites=true&w=majority";
