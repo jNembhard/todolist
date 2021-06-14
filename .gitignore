@@ -1,7 +1,10 @@
 node_modules
 build
 npm-debug.log
+todolist-nembhard
+
+config.js
+
 .nyc
 .env
 .DS_Store
-todolist-nembhard

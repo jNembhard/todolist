@@ -1,5 +1,5 @@
 # To-Do List
-This is a To-Do List application that allows users to add to a list items and cross of the item from the list when the task is complete. I have an example hosted on a webpage [HERE](https://todolist-nembhard.herokuapp.com/). 
+This is a To-Do List application that allows users to add to a list items and cross of the item from the list when the task is complete. I have an example hosted on a webpage [HERE](https://todolist-nembhard.herokuapp.com/).
 
 ## Setup
 1. Download the latest version of node.js for your Operating System.
@@ -37,4 +37,4 @@ You can then type localhost:3000 into your browser of choice. You should see the
 </body>
 
 ## Roadmap
-* Future updates for this application will include linking the list to a database with suggested To-Do items.
+* The Database has been completed and connected to Atlas. The README.md file will be updated to reflect this change.
