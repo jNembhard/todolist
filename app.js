@@ -3,6 +3,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const date = require(__dirname + "/date.js");
+const wakeDyno = require("woke-dyno");
 const mongoose = require("mongoose");
 const _ = require("lodash");
 const PORT = process.env.PORT || 3000;
@@ -19,9 +20,7 @@ const connectionParams = {useNewUrlParser: true, useCreateIndex: true, useUnifie
 
 app.set('view engine', 'ejs');
 
-app.use(bodyParser.urlencoded({
-  extended: true
-}));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
 
 mongoose.connect(uri, connectionParams)
@@ -142,7 +141,7 @@ app.get("/:routeListName", function(req, res) {
 
       } else {
         // Show an existing route
-        res.render("list", {listTitle: foundList.name,newListItems: foundList.items});
+        res.render("list", {listTitle: foundList.name, newListItems: foundList.items});
       }
     }
   });
@@ -153,5 +152,6 @@ app.get("/about", function(req, res) {
 });
 
 app.listen(PORT, function() {
+  wakeDyno(uri).start(); // prevents app from falling asleep
   console.log("Server is running on port " + PORT);
 });
