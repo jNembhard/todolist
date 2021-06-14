@@ -13,7 +13,7 @@ const username = process.env.USER_KEY;
 const apiKey = process.env.API_KEY;
 
 // const url = "mongodb://localhost:27017/todolistDB";
-const uri = `mongodb+srv://${USER_KEY}:${API_KEY}@cluster0.qr7fx.mongodb.net/ToDoList?retryWrites=true&w=majority`;
+const uri = `mongodb+srv://${username}:${apiKey}@cluster0.qr7fx.mongodb.net/ToDoList?retryWrites=true&w=majority`;
 
 const connectionParams = {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true};
 
