@@ -1,4 +1,4 @@
-node_modules
+/node_modules
 build
 npm-debug.log
 todolist-nembhard
@@ -6,5 +6,5 @@ todolist-nembhard
 config.js
 
 .nyc
-.env
+/*.env
 .DS_Store
