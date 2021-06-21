@@ -10,12 +10,9 @@ const PORT = process.env.PORT || 3000;
 
 const app = express();
 
-const username = process.env.USER_KEY;
-const apiKey = process.env.API_KEY;
-
 // const url = "mongodb://localhost:27017/todolistDB";
 const DYNO_URL = "https://todolist-nembhard.herokuapp.com/";
-const uri = `mongodb+srv://${username}:${apiKey}@cluster0.qr7fx.mongodb.net/ToDoList?retryWrites=true&w=majority`;
+const uri = process.env.MONGODB_URI;
 
 const connectionParams = {useNewUrlParser: true, useCreateIndex: true, useUnifiedTopology: true};
 
